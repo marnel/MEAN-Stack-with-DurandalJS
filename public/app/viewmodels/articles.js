@@ -19,7 +19,6 @@ define(['durandal/app', 'knockout', 'jquery', 'plugins/router', 'Global', '../mo
             canActivate: function() {
                 if ( !global.authenticated ) {
                     return {redirect: '/users?action=unauthorized'};
-                    return;
                 }
                 return true;
             },
@@ -71,7 +70,6 @@ define(['durandal/app', 'knockout', 'jquery', 'plugins/router', 'Global', '../mo
                 var that = this;
                 http.put('/api/articles/' + that.currentArticle()._id, { title: that.currentArticle().title, content: that.currentArticle().content}).
                     then(function( res ) {
-                        debugger;
                         app.showMessage('Article Updated!', 'Update');
                         that.activeDisplay('articles/view.html');
                         router.navigate('articles');
