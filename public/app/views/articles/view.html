@@ -1,0 +1,15 @@
+<section>
+    <div data-bind="visible: global.user._id == currentArticle().user._id">
+        <a class="btn" data-bind="attr: {href: '/#articles/edit?id=' + currentArticle()._id }">
+            <i class="icon-edit"></i>
+        </a>
+        <a class="btn" data-bind="click: remove">
+            <i class="icon-trash"></i>
+        </a>
+    </div>
+    <span data-bind="text: formatDate(currentArticle().created)"></span> -
+    <span data-bind="text: currentArticle().user.name"></span>
+    <h2 data-bind="text: currentArticle().title"></h2>
+    <Br>
+    <pre data-bind="text: currentArticle().content"></pre>
+</section>

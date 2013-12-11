@@ -1,0 +1,15 @@
+<section>
+	<ul class="articles unstyled">
+		<li data-bind="foreach: articles">
+            <h2><a data-bind="attr: { href: '#articles/view?id=' + _id, title: title }, text: title"></a></h2>
+            <div data-bind="text: content"></div>
+			<span data-bind="text: $root.formatDate(created)"></span> -
+			<span data-bind="text: user.name"></span>
+		</li>
+	</ul>
+    <div data-bind="if: articles().length < 1">
+        <h1>
+            No articles yet. <br> Why don't you <a href="#articles/create">Create One</a>?
+        </h1>
+    </div>
+</section>

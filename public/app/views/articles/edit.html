@@ -1,0 +1,25 @@
+<section>
+	<form class="form-horizontal" data-bind="submit: update">
+		<div class="control-group">
+			<label class="control-label" for="title">Title</label>
+
+			<div class="controls">
+				<input type="text" data-bind="value: currentArticle().title" id="title" placeholder="Title" required>
+				</input>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="content">Content</label>
+
+			<div class="controls">
+				<textarea data-bind="value: currentArticle().content" id="content" cols="30" rows="10" placeholder="Content">
+				</textarea>
+			</div>
+		</div>
+		<div class="control-group">
+			<div class="controls">
+				<input type="submit" class="btn">
+			</div>
+		</div>
+	</form>
+</section>

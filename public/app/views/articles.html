@@ -1,0 +1,7 @@
+<link type="text/css" rel="stylesheet" href="../../css/views/articles.css" />
+<div data-bind="compose: {view: activeDisplay }"></div>
+
+<div data-bind="if: activeDisplay() == 'articles/list.html'">
+    <button class="btn" data-bind="click: createArticle">Create Article</button>
+</div>
+<!--<pre data-bind="text: ko.toJSON(activeDisplay)"></pre>-->
