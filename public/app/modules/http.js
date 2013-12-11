@@ -1,10 +1,9 @@
 /**
  * Created by marnel on 12/10/13.
  */
-define(['plugins/http', 'jquery', 'knockout'], function(http, $, ko){
-    var _this = this;
-
-    var _http = {
+// Extend the durandal http plugin to include put and delete methods.
+define(['plugins/http', 'jquery', 'knockout'], function(httpPlugin, $, ko){
+    var http = {
         put: function(url, data) {
             return $.ajax({
                 url: url,
@@ -14,7 +13,7 @@ define(['plugins/http', 'jquery', 'knockout'], function(http, $, ko){
                 dataType: 'json'
             });
         },
-        delete: function(url, data) {
+        del: function(url, data) {
             return $.ajax({
                 url: url,
                 data: ko.toJSON(data),
@@ -24,8 +23,7 @@ define(['plugins/http', 'jquery', 'knockout'], function(http, $, ko){
             });
         }
     };
-    $.extend(_http, http);
-    //debugger;
-    return _http;
+    $.extend(http, httpPlugin);
+    return http;
 
 });
