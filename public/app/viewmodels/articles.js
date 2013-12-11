@@ -80,7 +80,7 @@ define(['durandal/app', 'knockout', 'jquery', 'plugins/router', 'Global', '../mo
             remove: function remove () {
                 var that = this;
                 that.activeDisplay('articles/list.html');
-                http.delete('/api/articles/' + that.currentArticle()._id, {}).
+                http.del('/api/articles/' + that.currentArticle()._id, {}).
                     then(function( data ) {
                         that.currentArticle({});
                         app.showMessage('Article Deleted!', 'Delete');
