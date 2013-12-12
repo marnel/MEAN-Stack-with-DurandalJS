@@ -1,6 +1,7 @@
-# MEAN Stack
+# MEAN (DEAN) Stack
 
-MEAN is a boilerplate that provides a nice starting point for [MongoDB](http://www.mongodb.org/), [Node.js](http://www.nodejs.org/), [Express](http://expressjs.com/), and [AngularJS](http://angularjs.org/) based applications. It is designed to give you quick and organized way to start developing of MEAN based web apps with useful modules like mongoose and passport pre-bundled and configured. We mainly try to take care of the connection points between existing popular frameworks and solve common integration problems.  
+MEAN (DEAN) is a boilerplate that provides a nice starting point for [MongoDB](http://www.mongodb.org/), [Node.js](http://www.nodejs.org/), [Express](http://expressjs.com/), and [DurandalJS](http://durandaljs.com/) based applications. It is designed to give you quick and organized way to start developing of MEAN based web apps with useful modules like mongoose and passport pre-bundled and configured. We mainly try to take care of the connection points between existing popular frameworks and solve common integration problems.
+
 
 ## Prerequisites
 * Node.js - Download and Install [Node.js](http://www.nodejs.org/download/). You can also follow [this gist](https://gist.github.com/isaacs/579814) for a quick and easy way to install Node.js and npm
@@ -21,7 +22,7 @@ $ npm install -g bower
 * Express - Defined as npm module in the [package.json](package.json) file.
 * Mongoose - Defined as npm module in the [package.json](package.json) file.
 * Passport - Defined as npm module in the [package.json](package.json) file.
-* AngularJS - Defined as bower module in the [bower.json](bower.json) file.
+* DurandalJS - Defined as bower module in the [bower.json](bower.json) file.
 * Twitter Bootstrap - Defined as bower module in the [bower.json](bower.json) file.
 * UI Bootstrap - Defined as bower module in the [bower.json](bower.json) file.
 
@@ -107,25 +108,20 @@ If you are using node instead of grunt, it is very similar:
 
 ## Getting Started
   We pre-included an article example, check it out:
-  * [The Model](https://github.com/linnovate/mean/blob/master/app/models/article.js) - Where we define our object schema.
-  * [The Controller](https://github.com/linnovate/mean/blob/master/app/controllers/articles.js) - Where we take care of our backend logic.
-  * [NodeJS Routes](https://github.com/linnovate/mean/blob/master/config/routes.js) - Where we define our REST service routes.
-  * [AngularJs Routes](https://github.com/linnovate/mean/blob/master/public/js/config.js) - Where we define our CRUD routes.
-  * [The AngularJs Service](https://github.com/linnovate/mean/blob/master/public/js/services/articles.js) - Where we connect to our REST service.
-  * [The AngularJs Controller](https://github.com/linnovate/mean/blob/master/public/js/controllers/articles.js) - Where we take care of  our frontend logic.
-  * [The AngularJs Views Folder](https://github.com/linnovate/mean/blob/master/public/views/articles) - Where we keep our CRUD views.
+  * [The Model](https://github.com/marnel/MEAN-Stack-with-DurandalJS/blob/master/app/models/article.js) - Where we define our object schema.
+  * [The Controller](https://github.com/marnel/MEAN-Stack-with-DurandalJS/blob/master/app/controllers/articles.js) - Where we take care of our backend logic.
+  * [NodeJS Routes](https://github.com/marnel/MEAN-Stack-with-DurandalJS/blob/master/config/routes.js) - Where we define our REST service routes.
+  * [DurandalJs Routes](https://github.com/marnel/MEAN-Stack-with-DurandalJS/blob/master/public/app/viewmodels/shell.js) - Where we define our CRUD routes.
+  * [The DurandalJS ViewModel](https://github.com/marnel/MEAN-Stack-with-DurandalJS/blob/master/public/app/viewmodels/articles.js) - Where we connect to our REST service.
+  * [The DurandalJs ArticleView](https://github.com/marnel/MEAN-Stack-with-DurandalJS/blob/master/public/app/views/articles.html) - Where we take care of  our frontend logic.
+  * [The DurandalJs Article Views Folder](https://github.com/marnel/MEAN-Stack-with-DurandalJS/tree/master/public/app/views/articles) - Where we keep our CRUD views.
 
 
 ```
 
-## More Information
-  * Contact Amos Haviv on any issue via [E-Mail](mailto:mail@amoshaviv.com), [Facebook](http://www.facebook.com/amoshaviv), or [Twitter](http://www.twitter.com/amoshaviv).
-  * Visit us at [Linnovate.net](http://www.linnovate.net/).
-  * Visit our [Ninja's Zone](http://www.meanleanstartupmachine.com/) for extended support.
-
 ## Credits
 Inspired by the great work of [Madhusudhan Srinivasa](https://github.com/madhums/)
-[Linnovate.net](http://www.linnovate.net/).
+Based off the work of [Linnovate.net](http://www.linnovate.net/).
 durandaljs.com
 
 ## License
